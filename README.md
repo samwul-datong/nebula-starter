@@ -8,8 +8,11 @@ This template can be used as a working starter template until the nebula team is
 ## Getting Started
 
 `git clone`
+
 `cd nebula-starter`
+
 `yarn && yarn start`
+
 `visit localhost:3000 in your browser`
 
 ## Helpful Links
