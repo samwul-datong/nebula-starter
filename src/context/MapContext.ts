@@ -32,7 +32,7 @@ export const MapContext = createContext<IMapContext>(defaultData)
 export const useMapContext = () => useContext(MapContext)
 
 export const useMapContextData = () => {
-  const [mode, setMode] = useState<MapMode>('view')
+  const [mode, setMode] = useState<MapMode>('draw-wall')
   const [featureCollection, setFeatureCollection] = useState({
     type: 'FeatureCollection',
     features: []

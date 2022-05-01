@@ -23,9 +23,7 @@ export const Map: React.FC = () => {
     selectedFeatureIndexes: mapContext.selectedFeatureIndexes,
 
     onEdit: ({ updatedData, editType, ...props }) => {
-      console.log(updatedData)
-      console.log(props)
-      if(editType === 'addFeature') mapContext.setFeatureCollection(updatedData);
+      mapContext.setFeatureCollection(updatedData);
     }
   });
 
@@ -34,7 +32,7 @@ export const Map: React.FC = () => {
       <DeckGL 
         initialViewState={initialViewState} 
         layers={[layer]} 
-        onClick={(evt, aa) => console.log(mapContext.mode, evt, aa)}
+        //onClick={(evt, aa) => console.log(mapContext.mode, evt, aa)}
       />
     </div>
   )
